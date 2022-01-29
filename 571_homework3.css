@@ -67,10 +67,11 @@
     right: 0;
     text-align: center;
     padding: 228px;
+    top: 75px;
 }
 
 .top-center_word{
-    font-family: Garamond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: whitesmoke;
     text-align: center;
     letter-spacing: 0.315em;
@@ -98,14 +99,15 @@
 
 #service {
     position:absolute;
-    left:130px;
+    left:142px;
     top: 190px;
 }
 
 .small_sentence{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:120%;
-    letter-spacing: 00.215em;
-    font-weight: 545;
+    letter-spacing: 00.15em;
+    font-weight: 500;
     color: white;
 }
 .service_sentence1{
@@ -119,8 +121,7 @@
     position:absolute;
     left:215px;
     top: 385px;
-    letter-spacing: 00.215em;
-    font-weight: 545;
+    /* letter-spacing: 00.15em; */
     color: white;
 }
 
@@ -137,6 +138,7 @@
     left:115px;
     top: 490px;
     padding: 10px 100px;
+    font-weight: 520;
 }
 .center_word{
     position: relative;
@@ -202,8 +204,9 @@ blockquote:before {
 
 #Gallery{
     position:absolute;
-    right:90px;
+    right:70px;
     top:190px;
+    letter-spacing: 0.5em;
 }
 
 #memory{
@@ -212,8 +215,8 @@ blockquote:before {
     text-align: center;
     right: 85px;
     font-size: 130%;
-    padding: 3px;
-    line-height: 150%;
+    padding: 0px;
+    line-height: 200%;
     letter-spacing: 0.4em;
 }
 
@@ -222,6 +225,7 @@ blockquote:before {
     top: 480px;
     right: 105px;
     padding: 10px 55px;
+    font-weight: 550;
 }
 .white_space{
     padding: 50px;
@@ -236,7 +240,7 @@ blockquote:before {
     color: white;
     padding-left:120px;
     padding-right: 50px;
-    font-size: 120%;
+    font-size: 100%;
     font-family: sans-serif;
     font-weight: 680%;
     font-style: bolder;
@@ -252,7 +256,7 @@ blockquote:before {
     float:left;
     width:200px;
     font-style: bolder;
-    font-weight: 530;
+    font-weight: 500;
 }
 
 #column1::after{
@@ -288,7 +292,7 @@ blockquote:before {
     border: solid 2px white;
     color:white;
     top: 2970px;
-    right: 100px;
+    right: 170px;
     padding: 10px 10px;
 }
 
@@ -297,4 +301,5 @@ blockquote:before {
     font-weight: 550;
     margin: 10px;
     line-height: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
