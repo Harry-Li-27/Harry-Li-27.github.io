@@ -1,0 +1,24 @@
+* {
+    margin: 5px;;
+}
+
+.Name {
+    color:black;
+    text-align: center;
+}
+
+.Research {
+    color:blue;
+}
+
+.Work {
+    color:crimson;
+}
+
+.Project {
+    color:darkblue
+}
+
+.Skills {
+    color:darkred;
+}
