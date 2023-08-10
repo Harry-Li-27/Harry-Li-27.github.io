@@ -9,10 +9,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-image: url('laguna.jpg');
+    /* background-image: url('laguna.jpg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-color: rgba(7, 106, 108, 0.148);
 }
 
 a {
@@ -26,10 +27,15 @@ ul {
 
 /* Header styles */
 header {
-    padding: 1rem;
+    padding: 0.2rem;
     border-bottom: 1px solid #ccc;
     background-color: rgba(22, 228, 232, 0.205); /* Brighter color and slightly transparent */
     color: #fff;
+}
+
+main {
+    /* padding: 1rem; */
+    margin-top: 1rem;
 }
 
 nav ul {
@@ -45,20 +51,21 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* Top image container */
-.top-image-container {
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    max-width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
+h1 {
+    color: #333;
 }
 
-/* Headshot styles */
+h2 {
+    margin-bottom: 0.6rem;
+    color: #fff;
+    margin-left: calc(7.5% + 1rem);
+}
+
+/* Top content styles */
+body > .section-container {
+    margin-top: 2rem;
+}
+
 .headshot {
     width: 150px;
     height: 150px;
@@ -68,32 +75,80 @@ nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
-h1 {
-    color: #333;
+.profile-container {
+    display: flex;
+    align-items: center;
 }
+
+.left-section {
+    flex: 1;
+    text-align: center;
+    padding-right: 2rem;
+}
+
+.right-section {
+    flex: 4;
+}
+/* End of Top content styles */
 
 /* Main content styles */
-main {
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-h2 {
-    margin-bottom: 0.6rem;
-    color: #fff;
-    margin-left: calc(7.5% + 1rem);
-}
-
 .section-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem; 
 }
+
+.keyword {
+    font-style: italic;
+    font-size: 0.75rem;
+    font-weight: 300; /* Lighter font-weight */
+}
+
+.experience-details {
+    font-size: 0.8rem;
+    padding-left: 1.5rem; /* Add indentation */
+    list-style-type: disc; /* Add list indicator */
+}
+
+/* End of Main content styles */
+
+/* Styles for the publication section */
+.publication-entry {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; /* space between each publication entry */
+}
+
+.publication-image img {
+    width: 300px;  /* adjust as required */
+    object-fit: cover;
+    object-position: center;
+    margin-left: 0.5rem;
+    margin-right: 3rem; /* space between image and content */
+}
+
+.publication-content {
+    line-height: 2;
+    flex-grow: 1;
+}
+
+.publication-link {
+    color: #00008B;  /* dark blue color */
+    margin-right: 0.5rem; /* space between the links */
+    text-decoration: none;
+}
+
+.publication-link:hover {
+    text-decoration: underline;
+}
+/* End of Styles for the publication section */
 
 /* Footer styles */
 footer {
@@ -104,19 +159,4 @@ footer {
     background-color: rgba(22, 228, 232, 0.205); /* Brighter color and slightly transparent */
     color: #fff;
 }
-
-.experience-details {
-    font-size: 0.8rem;
-    padding-left: 1.5rem; /* Add indentation */
-    list-style-type: disc; /* Add list indicator */
-}
-
-/* .experience-details li {
-    margin-bottom: 0.5rem;
-} */
-
-.keyword {
-    font-style: italic;
-    font-size: 0.75rem;
-    font-weight: 300; /* Lighter font-weight */
-}
+/* End of Footer styles */

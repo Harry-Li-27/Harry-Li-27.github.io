@@ -13,69 +13,99 @@
     <header>
         <nav>
             <ul>
-                <li><a href="personal_interest.html"><i class="fa-solid fa-diamond"></i></a></li>
+                <li><a href="personal_interest.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-diamond"></i></a></li>
                 <li><a href="mailto:liyueche@usc.edu"><i class="fas fa-envelope fa-lg"></i></a></li>
-                <li><a href="https://www.instagram.com/harry_li_27" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
-                <li><a href="https://github.com/Harry-Li-27" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                <li><a href="https://www.instagram.com/harry_li_27" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i></a></li>
+                <li><a href="https://github.com/Harry-Li-27" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-lg"></i></a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="top-image-container">
-        <img src="visa.jpg" alt="Your Name" class="headshot">
-        <h1>Yuecheng Li</h1>
-        <p>Incoming Ph.D. student at USC</p>
+    <div class="section-container">
+        <div class="profile-container">
+            <!-- Left Section -->
+            <div class="left-section">
+                <img src="images/visa.jpg" alt="Your Name" class="headshot">
+                <h1>Yuecheng Li</h1>
+                <p>Incoming Ph.D. student at USC</p>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="right-section">
+                <p>
+                    My primary research interests encompass Deep Learning, Computer Vision, 
+                    and Probabilistic Machine Learning Models. I am currently working under 
+                    the guidance of Professor Nicolas Schweighofer at the University of Southern California, 
+                    focusing on Bayesian Modeling and its applications in Motor Learning. Previously, 
+                    I collaborated with Professor Laurent Itti on projects related to Continual Learning 
+                    and Transfer Learning. My academic journey includes an M.S. degree in Computer Science 
+                    from the University of Southern California and a Bachelor's degree in Computer Science 
+                    from the University of Illinois - Urbana Champaign. I have contributed to significant 
+                    publications, including "CLR: Channel-wise Lightweight Reprogramming for Continual Learning" 
+                    presented at ICCV 2023 and "Lightweight Learner for Shared Knowledge Lifelong Learning" published 
+                    in TMLR. My work in transfer and continual learning has achieved state-of-the-art 
+                    performance, surpassing existing benchmarks. 
+                </p>
+            </div>
+        </div>
     </div>
+    
+    
 
     <main>
-        <h2>About</h2>
-        <div class="section-container">
-            <p>
-                My main interest lies in Artificial Neural Network Design inspired by Neural Science.
-                I am currently supervised by Professor Nicolas Schweighofer working on Continual Learning, Deep Learning and Motor Learning. 
-                Formly, I was a research assistant under Professor Laurent Itti’s supervision working on Continual Learning and Transfer Learning.
-                <!-- He helped to develop an algorithm that can be used for both transfer learning and continual learning. 
-                On a huge dataset that contains 53 tasks, 1583 classes, and 146488 images, 
-                the algorithm reaches an average accuracy of 86.25% vs. 81.53% which is H2T's result 
-                (algorithm developed by google) in transfer learning and 74.83% (DERPP's result) in continual learning. 
-                Another highlight of the algorithm is that it only uses 0.59% extra parameters compared to the backbone model. 
-                Yuecheng Li also defined a multi-agent life-long learning problem in which multiple agents learn different knowledge 
-                in different locations and shared the knowledge with each other along with a solution for the problem. 
-                A dataset is created, which contains >100 tasks and ~3,000,000 images with different classification purposes 
-                (e.g. scene classification, object classification, counting, etc.) and various task sizes 
-                (small tasks only contain ~100 images and large tasks contain ~300,000 images). 
-                The solution achieves an average accuracy of 60% with low memory cost and training time while adapting 
-                other appropriate and strong algorithms to the task can only reach 32%. -->
-            </p>
-        </div>
-
-        <h2>Education</h2>
-        <div class="section-container">
-            <ul>
-                <li>Master of Science in Computer Science, University of Southern California, 2021-2023</li>
-                <li>Bachelor of Science in Math and Computer Science, University of Illinois - Urbana Champaign, 2017-2021</li>
-                <li>Bachelor of Science in Psychology, University of Illinois - Urbana Champaign, 2017-2021</li>
-                <!-- Add more education entries as needed -->
-            </ul>
-        </div>
-
         <h2>Publications</h2>
         <div class="section-container">
-            <ul>
-                <!-- <li>Author 1, Author 2, and Your Name. "Title of Paper." Journal/Conference Name, Year.</li> -->
-                <!-- <li>Your Name, Author 2, and Author 3. "Title of Another Paper." Journal/Conference Name, Year.</li> -->
-                <!-- Add more publications as needed -->
-            </ul>
+            <div class="publication-entry">
+                <div class="publication-image">
+                    <img src="images/Publication/CLR.png" alt="Publication Title">
+                </div>
+                <div class="publication-content">
+                    <h3>CLR: Channel-wise Lightweight Reprogramming for Continual Learning</h3>
+                    <p style="line-height: 1">Yunhao Ge, <b>Yuecheng Li*</b>, Shuo Ni*, Jiaping Zhao, Ming-Hsuan Yang, Laurent Itti (*=equal contribution as second author)</p>
+                    <p>ICCV 2023 (<em>International Conference on Computer Vision</em>)</p>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/pdf/2307.11386.pdf" class="publication-link" target="_blank" rel="noopener noreferrer">[paper]</a> 
+                        <a href="https://github.com/gyhandy/Channel-wise-Lightweight-Reprogramming" class="publication-link" target="_blank" rel="noopener noreferrer">[code]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="publication-entry">
+                <div class="publication-image">
+                    <img src="images/Publication/SKILL.gif" alt="Publication Title">
+                </div>
+                <!-- Content of the publication -->
+                <div class="publication-content">
+                    <h3>Lightweight Learner for Shared Knowledge Lifelong Learning</h3>
+                    <p style="line-height: 1">Yunhao Ge, <b>Yuecheng Li*</b>, Di Wu*, Ao Xu*, 
+                        Adam M. Jones, Amanda Sofie Rios, Iordanis Fostiropoulos, 
+                        Shixian wen, Po-Hsuan Huang, Zachary William Murdock, Gozde Sahin, 
+                        Shuo Ni, Kiran Lekkala, Sumedh Anand Sontakke, Laurent Itti (*=equal contribution as second author)</p>
+                    <p>TMLR (<em>Transactions on Machine Learning Research</em>)</p>
+                    <div class="publication-links">
+                        <a href="https://openreview.net/pdf?id=Jjl2c8kWUc" class="publication-link" target="_blank" rel="noopener noreferrer">[paperr]</a> 
+                        <a href="https://github.com/gyhandy/Shared-Knowledge-Lifelong-Learning" class="publication-link" target="_blank" rel="noopener noreferrer">[code]</a>
+                        <a href="http://ilab.usc.edu/andy/skill" class="publication-link" target="_blank" rel="noopener noreferrer">[website]</a>
+                        <a href="http://ilab.usc.edu/andy/skill102" class="publication-link" target="_blank" rel="noopener noreferrer">[dataset]</a>
+                        <a href="https://viterbischool.usc.edu/news/2023/07/teaching-robots-to-teach-other-robots/" class="publication-link" target="_blank" rel="noopener noreferrer">[Viterbi Press]</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <h2>Research Experience</h2>
         <div class="section-container">
             <ul>
-                <li>Research Assistant, iLab [Supervised by Prof.Laurent Itti], University of Southern California, 2021-2023</li>
+                <li>Research Assistant, CNRL [Supervised by Prof. Nicolas Schweighofer], University of Southern California, 2023-Present</li>
+                    <span class="keyword">Keywords: AI for Science, Bayesian Inference, Reinforcement Learning</span>
+                    <ul class="experience-details">
+                        <li>Developed reinforcement learning model for human motor learning and used Bayesian inference to estimate the parameters.</li>
+                    </ul>
+                <li>Research Assistant, iLab [Supervised by Prof.Laurent Itti], University of Southern California, 2021-Present</li>
                     <span class="keyword">Keywords: Transfer Learning, Continual Learning</span>
                     <ul class="experience-details">
                         <li>Created algorithm for transfer and continual learning with SOTA performance (86.25% (ours) vs. 81.53% (Head2Toe) in transfer learning and vs. 56.69% (Supermasks in Superposition) in continual learning) and low extra memory (only 0.59% extra parameters needed)</li>
                         <li>Defined a multi-agent life-long learning task, created a dataset (>100 tasks) for the problem, and achieved SOTA performance compare to other algorithms such as GEM and derpp. (60% (ours) compare to 32%) with lower memory cost and less training time</li>
+                        <li>Created three websites for publications in lifelong learning on different projects.</li>
                     </ul>
                 <li>Research Assistant, ICAROS [Supervised by Prof.Stefanos Nikolaidis], University of Southern California, 2021-2022</li>
                     <span class="keyword">Keywords: Quality Diversity Algorithm, Optimization</span>
